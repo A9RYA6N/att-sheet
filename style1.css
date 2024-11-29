@@ -1,110 +1,109 @@
-/* General Body Styling */
+/* Global Styles */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Neutral light gray for a structured background */
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0; /* Removes default margin for consistency */
-    background-color: rgb(232, 205, 30); /* Softer background for better contrast */
-    font-family: 'Arial', sans-serif; /* Clean and modern font */
 }
 
-/* Container Styling */
+/* Container */
 .container {
-    background-color: #0066ff; /* Retains your primary blue color */
-    padding: 25px; /* Slightly larger padding for spacious design */
-    border-radius: 12px; /* Softer corners for modern feel */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
-    text-align: center;
-    width: 350px; /* Wider for larger forms */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    background-color: #ffffff; /* Clean white for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-.container:hover {
-    transform: scale(1.03); /* Subtle zoom effect */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Heading Styling */
+/* Heading */
 h1 {
+    text-align: center;
+    color: #003366; /* Deep blue for authority and focus */
+    font-size: 2rem;
     margin-bottom: 20px;
-    font-size: 1.8rem; /* Larger font for better readability */
-    color: #ffffff; /* Contrasts against blue background */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Form Container */
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f9f9f9; /* Light neutral background for the form */
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #d1d1d1; /* Subtle border for structure */
 }
 
-/* Form Styling */
-form {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin: 10px 0 5px;
-    font-size: 0.9rem; /* Small but readable font */
-    color: #ffffff; /* Labels match the overall theme */
-}
-
-input {
-    width: 100%;
-    padding: 12px; /* Increased padding for a spacious feel */
+/* Form Heading */
+h2 {
+    color: #004080; /* Muted blue for form title */
+    text-align: center;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px; /* Rounded inputs for consistency */
-    box-sizing: border-box;
-    font-size: 1rem; /* Comfortable input text size */
-    transition: border 0.3s ease, box-shadow 0.3s ease; /* Adds interactivity */
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-input:focus {
-    border-color: #0056b3; /* Highlight border on focus */
-    box-shadow: 0 0 8px rgba(0, 86, 179, 0.4); /* Subtle glow effect */
-    outline: none; /* Removes default outline */
+/* Labels */
+label {
+    font-size: 1rem;
+    color: #333333; /* Dark gray for clarity */
+    margin-bottom: 5px;
+    display: block;
 }
 
-/* Button Styling */
-button {
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
-    padding: 12px; /* Increased padding for a larger button */
-    background-color: #005f3c; /* Green for actionable buttons */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #cccccc; /* Light gray border for a professional look */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff; /* Clean white background */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #0056b3; /* Highlight border with disciplined blue */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.2); /* Subtle glow effect */
+}
+
+/* Submit Button */
+button {
+    background-color: #003366; /* Deep disciplined blue */
+    color: white;
+    padding: 12px;
+    width: 100%;
     border: none;
-    border-radius: 8px;
-    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #003f29; /* Darker shade on hover */
-    transform: scale(1.02); /* Slight zoom effect */
+    background-color: #002244; /* Slightly darker blue on hover */
+    transform: scale(1.02); /* Subtle zoom effect */
 }
 
-button:active {
-    transform: scale(0.98); /* Button presses slightly in */
-}
-
-/* Responsive Design */
-@media (max-width: 480px) {
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 600px) {
     .container {
-        width: 90%; /* Adjusts container width for small screens */
         padding: 20px;
     }
 
     h1 {
-        font-size: 1.5rem; /* Adjusts heading size for smaller devices */
+        font-size: 1.8rem;
     }
 
-    button {
-        font-size: 0.9rem; /* Ensures button text is legible */
+    h2 {
+        font-size: 1.4rem;
     }
 }
