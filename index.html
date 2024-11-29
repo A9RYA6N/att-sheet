@@ -1,7 +1,6 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" 
@@ -22,9 +21,7 @@
         }
     </style>
 </head>
-
 <body>
-
     <div class="navbar">
         <div class="navbar-brand">
             <h1> 
@@ -36,33 +33,21 @@
                 Academic Year: 
                 <span id="academicYear">2024</span>
             </p>
-            <!-- Add other relevant information -->
         </div>
     </div>
-
     <div class="container">
         <div id="formSection">
             <h2>Mark Attendance</h2>
-            <button id="addStudentButton" 
-                onclick="showAddStudentForm()">
-                Add Student
+            <button id="resetData" 
+                onclick="resetAttendanceAndColors()">
+                Reset
             </button>
-            <button id="addClassButton" 
-                onclick="showAddClassForm()">
-                Add Class
-            </button>
-
             <label for="classSelector">Class:</label>
             <select id="classSelector" required 
                 onchange="showStudentsList()">
-                <!-- Populate classes dynamically -->
             </select>
-
             <ul id="studentsList">
-                <!-- Populate students dynamically 
-                    based on the selected class -->
             </ul>
-
             <div id="summarySection">
                 <h3>Summary</h3>
                 <p>
@@ -82,12 +67,9 @@
                     <span id="totalLeave">0</span>
                 </p>
             </div>
-
             <button onclick="submitAttendance()">
                 Submit Attendance
             </button>
-
-            <!-- Result Section -->
             <div id="resultSection" style="display: none;">
                 <h3>Attendance Result</h3>
                 <p>
@@ -121,10 +103,8 @@
             </div>
         </div>
     </div>
-
     <div id="addStudentPopup" class="popup">
         <h2>Add Student</h2>
-        <!-- Add Student Form Content -->
         <label for="newStudentName">
             Student Name:
         </label>
@@ -133,8 +113,6 @@
             Roll Number:
         </label>
         <input type="text" id="newStudentRoll" required>
-        <!-- Add more fields as needed -->
-
         <button onclick="addStudent()">
             submit
         </button>
@@ -142,16 +120,12 @@
             Cancel
         </button>
     </div>
-
     <div id="addClassPopup" class="popup">
         <h2>Add Class</h2>
-        <!-- Add Class Form Content -->
         <label for="newClassName">
             Class Name:
         </label>
         <input type="text" id="newClassName" required>
-        <!-- Add more fields as needed -->
-
         <button onclick="addClass()">
             Submit
         </button>
@@ -159,8 +133,6 @@
             Cancel
         </button>
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>
