@@ -1,54 +1,110 @@
+/* General Body Styling */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Removes default margin for consistency */
+    background-color: rgb(232, 205, 30); /* Softer background for better contrast */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
 }
+
+/* Container Styling */
 .container {
-    background-color: #0066ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0066ff; /* Retains your primary blue color */
+    padding: 25px; /* Slightly larger padding for spacious design */
+    border-radius: 12px; /* Softer corners for modern feel */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
-    width: 300px;
+    width: 350px; /* Wider for larger forms */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
+
+.container:hover {
+    transform: scale(1.03); /* Subtle zoom effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading Styling */
 h1 {
     margin-bottom: 20px;
+    font-size: 1.8rem; /* Larger font for better readability */
+    color: #ffffff; /* Contrasts against blue background */
 }
+
+/* Form Container */
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* Form Styling */
 form {
     margin-bottom: 20px;
     width: 100%;
 }
+
 label {
     display: block;
     text-align: left;
     margin: 10px 0 5px;
+    font-size: 0.9rem; /* Small but readable font */
+    color: #ffffff; /* Labels match the overall theme */
 }
+
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Increased padding for a spacious feel */
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px; /* Rounded inputs for consistency */
     box-sizing: border-box;
+    font-size: 1rem; /* Comfortable input text size */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Adds interactivity */
 }
+
+input:focus {
+    border-color: #0056b3; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.4); /* Subtle glow effect */
+    outline: none; /* Removes default outline */
+}
+
+/* Button Styling */
 button {
     width: 100%;
-    padding: 10px;
-    background-color: #005f3c;
+    padding: 12px; /* Increased padding for a larger button */
+    background-color: #005f3c; /* Green for actionable buttons */
     border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 button:hover {
-    background-color: #0056b3;
+    background-color: #003f29; /* Darker shade on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+button:active {
+    transform: scale(0.98); /* Button presses slightly in */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Adjusts container width for small screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjusts heading size for smaller devices */
+    }
+
+    button {
+        font-size: 0.9rem; /* Ensures button text is legible */
+    }
 }
