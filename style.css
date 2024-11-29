@@ -3,14 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6f2ff; /* Light blue background for a cohesive look */
+    background-color: rgb(242, 167, 84); /* Updated background color */
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Navbar Styling */
 .navbar {
-    background-color: #0056b3; /* Deep blue for a strong header */
+    background-color: black; /* Deep blue for a strong header */
     color: #ffffff;
     padding: 10px 20px;
     display: flex;
@@ -46,15 +46,15 @@ body {
 }
 
 /* Main Container */
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 25px;
-    background-color: #ffffff; /* Clean white for content clarity */
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
-    animation: fadeIn 0.6s ease-in-out;
-}
+.container { 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 25px; 
+    background-color: #ffffff; /* Clean white for content clarity */ 
+    border-radius: 12px; 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */ 
+    animation: fadeIn 0.6s ease-in-out; 
+    border: 2px solid #000000; /* Adds a solid black border of 2px thickness */ }
 
 /* Heading Styling */
 h2 {
@@ -206,22 +206,18 @@ button:hover {
     color: #0066ff; /* Matches the primary blue */
 }
 
-#resetData{
+#resetData {
     background-color: #37baea;
 }
 
-#resetData:hover{
+#resetData:hover {
     background-color: blue;
 }
 
-#submitButton{
+#submitButton {
     background-color: #37baea;
 }
 
-#submitButton:hover{
+#submitButton:hover {
     background-color: blue;
 }
-
-
-
-
