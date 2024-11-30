@@ -13,45 +13,6 @@ function fetchStudentsData() {
         })
         .catch(error => console.error("Error loading students data:", error));
 }
-function addStudent() {
-    const newStudentName = document.getElementById('newStudentName').value;
-    const newStudentRoll = document.getElementById('newStudentRoll').value;
-    if (!newStudentName || !newStudentRoll) {
-        alert("Please provide both name and roll number.");
-        return;
-    }
-    const selectedClass = '2024-2028';
-    const studentsList = document.getElementById('studentsList');
-    const listItem = document.createElement('li');
-    listItem.setAttribute('data-roll-number', newStudentRoll);
-    listItem.innerHTML = `<strong>${newStudentName}</strong> Roll No. ${newStudentRoll}`;
-    const absentButton = createButton('A', 'absent', () => markAttendance('absent', listItem, selectedClass));
-    const presentButton = createButton('P', 'present', () => markAttendance('present', listItem, selectedClass));
-    const leaveButton = createButton('L', 'leave', () => markAttendance('leave', listItem, selectedClass));
-    listItem.appendChild(absentButton);
-    listItem.appendChild(presentButton);
-    listItem.appendChild(leaveButton);
-    studentsList.appendChild(listItem);
-    saveStudentsList(selectedClass);
-    closePopup();
-}
-function addClass() {
-    const newClassName = document.
-        getElementById('newClassName').value;
-    if (!newClassName) {
-        alert("Please provide a class name.");
-        return;
-    }
-    const classSelector = document.
-        getElementById('classSelector');
-    const newClassOption = document.
-        createElement('option');
-    newClassOption.value = newClassName;
-    newClassOption.text = newClassName;
-    classSelector.add(newClassOption);
-    saveClasses();
-    closePopup();
-}
 function submitAttendance() {
     const classSelector = document.
         getElementById('classSelector');
