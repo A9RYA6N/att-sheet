@@ -221,3 +221,12 @@ button:hover {
 #submitButton:hover {
     background-color: blue;
 }
+
+#addStudentButton {
+    background-color: #37baea;
+}
+
+#addStudentButton:hover {
+    background-color: blue;
+}
+
