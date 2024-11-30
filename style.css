@@ -3,14 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(242, 167, 84); /* Updated background color */
+    background-color: rgb(242, 167, 84);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Navbar Styling */
 .navbar {
-    background-color: black; /* Deep blue for a strong header */
+    background-color: black;
     color: #ffffff;
     padding: 10px 20px;
     display: flex;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-links a:hover {
-    color: #ffcc00; /* Bright yellow for hover effect */
+    color: #ffcc00;
 }
 
 /* Main Container */
@@ -50,15 +50,15 @@ body {
     max-width: 800px; 
     margin: 20px auto; 
     padding: 25px; 
-    background-color: #ffffff; /* Clean white for content clarity */ 
+    background-color: #ffffff;
     border-radius: 12px; 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */ 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
     animation: fadeIn 0.6s ease-in-out; 
-    border: 2px solid #000000; /* Adds a solid black border of 2px thickness */ }
+    border: 2px solid #000000;}
 
 /* Heading Styling */
 h2 {
-    color: #0056b3; /* Matches the navbar for consistency */
+    color: #0056b3;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
@@ -68,7 +68,7 @@ label {
     margin-top: 10px;
     display: block;
     font-weight: bold;
-    color: #333333; /* Neutral gray for readability */
+    color: #333333;
 }
 
 select, input {
@@ -83,7 +83,7 @@ select, input {
 }
 
 select:focus, input:focus {
-    border-color: #0056b3; /* Highlight border with deep blue */
+    border-color: #0056b3;
     box-shadow: 0 0 8px rgba(0, 86, 179, 0.4);
     outline: none;
 }
@@ -97,7 +97,7 @@ ul {
 li {
     margin: 10px 0;
     padding: 10px;
-    background-color: #f0f8ff; /* Very light blue for list items */
+    background-color: #f0f8ff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -129,20 +129,20 @@ button {
 }
 
 button.absent {
-    background-color: #ff4d4d; /* Red for absent */
+    background-color: #ff4d4d;
 }
 
 button.present {
-    background-color: #009933; /* Green for present */
+    background-color: #009933;
 }
 
 button.leave {
-    background-color: #ffa500; /* Orange for leave */
+    background-color: #ffa500;
 }
 
 button:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    filter: brightness(0.9); /* Darkens on hover */
+    transform: scale(1.05);
+    filter: brightness(0.9);
 }
 
 /* Responsive Design for Smaller Screens */
@@ -203,7 +203,7 @@ button:hover {
 
 #resultSection span {
     font-weight: bold;
-    color: #0066ff; /* Matches the primary blue */
+    color: #0066ff;
 }
 
 #resetData {
@@ -221,12 +221,3 @@ button:hover {
 #submitButton:hover {
     background-color: blue;
 }
-
-#addStudentButton {
-    background-color: #37baea;
-}
-
-#addStudentButton:hover {
-    background-color: blue;
-}
-

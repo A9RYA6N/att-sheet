@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Leaderboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #65a2f2;
+    }
+    table {
+      width: 50%;
+      border:1px solid black;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 2px solid #0b0101;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecdddd;
+    }
+    tr:nth-child(even) {
+      background-color: #a50f0f;
+    }
+    .studentName{
+      font-size: 23px;
+    }
+  </style>
+</head>
+<body>
+  <div class="portal"><h1>Attendance Leaderboard</h1></div>
+  <form id="attendanceForm">
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" placeholder="Enter name" required><br>
+    <label for="attendanceCount">Attendance:</label>
+    <input type="number" id="attendanceCount" placeholder="Enter attendance count" min="0" required><br>
+    <button type="submit">Add/Update Student</button>
+  </form>
+  <h2>Leaderboard</h2>
+  <table id="leaderboard">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Attendance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Leaderboard rows will be dynamically added here -->
+    </tbody>
+  </table>
+  <script src="lbdscript.js"></script>
+</body>
+</html>

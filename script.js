@@ -13,6 +13,10 @@ function fetchStudentsData() {
         })
         .catch(error => console.error("Error loading students data:", error));
 }
+function showAddStudentForm() {
+    document.getElementById('addStudentPopup').
+        style.display = 'block';
+}
 function submitAttendance() {
     const classSelector = document.
         getElementById('classSelector');

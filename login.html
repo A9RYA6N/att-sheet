@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="registrationForm">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <label for="personalMobile">Personal Mobile No</label>
+            <input type="text" id="personalMobile" name="personalMobile" required>
+            <label for="parentsMobile">Parents' Mobile No</label>
+            <input type="text" id="parentsMobile" name="parentsMobile" required>
+            <button type="button" id="generateOtpBtn">Generate OTP</button>
+            <div id="otpSection" style="display: none;">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="lgnscript.js"></script>
+</body>
+</html>
+
