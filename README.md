@@ -32,4 +32,5 @@ Further Enhancement:
 Implement functionalities like displaying previous attendance records.
 Integrate with a database to store and retrieve attendance data persistently.
 Add features for exporting attendance data to different formats (CSV, PDF).
+(To gamify)
 Add a way to gamify it by adding leaderboards and a point system.
